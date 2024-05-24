@@ -35,7 +35,7 @@ jobs:
           ${{ runner.os }}-maven-cache-
 
     - name: Maven Package Build
-      run: mvn -B package --file pom.xml
+      run: mvn -B package
 
     - name: Maven Test Execution
       run: mvn test
